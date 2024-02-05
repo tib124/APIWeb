@@ -44,7 +44,7 @@ namespace APIWeb.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<Employee>> AddEmployee(Employee employee)
+        public async Task<ActionResult<Employee>>AddEmployee(Employee employee)
         {
             try
             {
@@ -53,7 +53,7 @@ namespace APIWeb.Controllers
                     return BadRequest();
                 }
 
-                //var e = _employee.GetByEmail(employee.Email);
+                //var e = await _employee.GetByEmail(employee.Email);
 
                 //if (e != null) 
                 //{ 
@@ -74,6 +74,8 @@ namespace APIWeb.Controllers
                 return BadRequest();
             }
         }
+
+
 
         [HttpPut("{id}")]
 

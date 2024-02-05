@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace APIWeb.Models
 {
-    public class EmployeeRpository : IEmployeeRepository
+    public class EmployeeRepository : IEmployeeRepository
     {
         private readonly MyDbContext _Db;
 
-        public EmployeeRpository(MyDbContext db)
+        public EmployeeRepository(MyDbContext db)
         {
             _Db = db;
         }
