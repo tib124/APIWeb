@@ -50,7 +50,7 @@ builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlite(@"Data Source=Database.sqlite");
 });
 
-builder.Services.AddScoped<IEmployeeRepository, EmployeeRpository>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
